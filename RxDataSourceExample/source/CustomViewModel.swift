@@ -18,7 +18,6 @@ extension SectionOfPerson: SectionModelType {
 class CustomViewModel {
     
     let items = PublishSubject<[SectionOfPerson]>()
-    private var disposeBag = DisposeBag()
     
     func updateItem() {
         var sections: [SectionOfPerson] = []
